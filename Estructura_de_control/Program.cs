@@ -64,6 +64,7 @@ namespace Estructura_de_control
 
 
             //TALLER ESTRUCTURA DE CONTROL
+
             //ejercicio1
             //    Console.WriteLine("Ingrese el monto del prestamo: ");
             //    double monto = double.Parse(Console.ReadLine());
@@ -98,7 +99,69 @@ namespace Estructura_de_control
             //Console.WriteLine("Descuento pension (16%): " + pension);
             //Console.WriteLine("Total a recibir: " + total);
 
-            // ejercicio3
+
+            //POO
+            //int[] numeros = new int[3];
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("Ingrese un número: " + (i + 1) + ": ");
+            //    numeros[i] = int.Parse(Console.ReadLine());
+            //}
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("Número" + (i + 1) +  ": " + numeros[i]);
+            //}
+
+
+            //EJERCICIOS DE LISTA
+            List<int> numero = new List<int>();
+
+            numero.Add(10);
+            numero.Add(20);
+            numero.Add(30);
+
+            Console.WriteLine("Los números de la lista son: ");
+            foreach (int i in numero)
+            {
+                Console.WriteLine(1);
+            }
+            int segundoNumero = numero[1];
+            Console.WriteLine("El segundo numero de a lista es: " + segundoNumero);
+
+            numero[1] = 25;
+            Console.WriteLine("La lista después de modificar el segundo número: ");
+            foreach (int i in numero)
+            {
+                Console.WriteLine(1);
+            }
+
+            numero.Insert(0, 15);
+            Console.WriteLine("La lista después de insertar 15 en la posición 1: ");
+            foreach (int i in numero)
+            {
+                Console.WriteLine(i);
+            }
+
+            numero.Remove(30);
+            Console.WriteLine("La lista después de eliminar número 30: ");
+            foreach (int i in numero)
+            {
+                Console.WriteLine(i);
+            }
+            numero.Remove(30);
+            Console.WriteLine("La lista después de eliminar número 30: ");
+            foreach (int i in numero)
+            {
+                Console.WriteLine(i);
+            }
+
+            numero.Sort();
+            Console.WriteLine("La lista después de ordenar:");
+            foreach (int i in numero)
+            {
+                Console.WriteLine(i);
+            }
+
         }
     }
 }
